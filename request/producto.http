@@ -1,0 +1,43 @@
+@api = http://localhost:4000/api
+
+
+### TEST
+GET {{api}}/producto/test
+Content-Type: application/json
+
+### Listar Producto
+GET {{api}}/producto/list
+Content-Type: application/json
+
+### Crear Producto
+POST {{api}}/producto/create
+Content-Type: application/json
+
+{
+    "id":"1",
+    "codigo":"123a",
+    "es_nacional":"1",
+    "nombre":"joel",
+    "precio":"5.2",
+    "fecha_registro":"20/06/2023",
+    "fecha_modificacion":"25/06/2023"
+}
+
+### Editar Producto
+PUT {{api}}/producto/edit/2
+Content-Type: application/json
+
+{
+   "id":"2",
+    "codigo":"123b",
+    "es_nacional":"2",
+    "nombre":"mario",
+    "precio":"10.2",
+    "fecha_registro":"22/06/2023",
+    "fecha_modificacion":"27/06/2023"
+}
+
+
+### Eliminar Tarea
+DELETE {{api}}/producto/delete/2
+Content-Type: application/json

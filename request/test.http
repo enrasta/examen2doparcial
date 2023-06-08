@@ -1,0 +1,24 @@
+### GET TEST
+GET http://localhost:4000/test
+Content-Type: application/json
+
+### POST TEST
+POST http://localhost:4000/test/2?tipo=GET&texto=hola
+Content-Type: application/json
+
+{
+    "username":"Tom",
+    "nombre":"Tom y Jerry",
+    "password":"123"
+}
+
+
+### POST TEST
+GET http://localhost:4000/test/2
+Content-Type: application/json
+
+
+
+### GET obtener
+GET http://localhost:4000/user/list
+Content-Type: application/json
